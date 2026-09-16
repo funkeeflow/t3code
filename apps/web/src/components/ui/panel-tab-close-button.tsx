@@ -14,10 +14,7 @@ export function PanelTabCloseButton({ label, onClick, tooltip }: PanelTabCloseBu
       type="button"
       className="cursor-pointer group/close relative flex size-4 shrink-0 items-center justify-center rounded-sm hover:bg-muted"
       aria-label={label}
-      onClick={(event) => {
-        event.stopPropagation();
-        onClick();
-      }}
+      onClick={onClick}
     >
       <X className="hidden size-3 group-hover/tab:block group-focus-visible/close:block" />
     </button>
